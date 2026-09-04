@@ -1,17 +1,17 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ประวัติส่วนตัว | Portfolio ของ [พิมลรัตน์ อินต๊ะวงค์]</title>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>ประวัติส่วนตัว | Student Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">My<span>Portfolio</span></a>
-            <nav class="nav-links">
+            <div class="logo">My<span>Port.</span></div>
+            <nav>
                 <a href="index.html">หน้าแรก</a>
                 <a href="profile.html" class="active">ประวัติส่วนตัว</a>
                 <a href="education.html">การศึกษา</a>
@@ -21,60 +21,42 @@
         </div>
     </header>
 
-    <main class="container fade-in">
-        <div class="page-header">
-            <h1>ประวัติส่วนตัว</h1>
-            <p>ข้อมูลพื้นฐานและเรื่องราวเกี่ยวกับฉัน</p>
+    <main class="page-container fade-in">
+        <div class="section-header">
+            <h2>ประวัติส่วนตัว</h2>
+            <div class="underline"></div>
         </div>
 
-        <div class="profile-layout">
-            <!-- ซ้าย: รูปภาพและข้อมูลย่อ -->
-            <div class="profile-sidebar card">
-                <img src="images/images (1).jpg"alt=รูปโปรไฟล์ของฉัน">">
-                <h2 class="profile-name">[พิมลรัตน์ อินต๊ะวงค์]</h2>
-                <p class="profile-nickname">ชื่อเล่น: [กรอกชื่อเล่น]</p>
+        <div class="profile-grid">
+            <div class="profile-card">
+                <img src="https://placehold.co/300x300/42A5F5/FFFFFF?text=Profile" alt="รูปโปรไฟล์ของฉัน">
+                <h3>พิมลรัตน์ อินต๊ะวงค์ (สตางค์)</h3>
+                <p class="tag">นักเรียนมัธยมศึกษาตอนต้น</p>
             </div>
-
-            <!-- ขวา: ข้อมูลรายละเอียด -->
-            <div class="profile-details">
-                <div class="card info-box">
-                    <h3>เกี่ยวกับฉัน</h3>
-                    <p>สวัสดีครับ/ค่ะ ฉันคือนักเรียนชั้นมัธยมศึกษาปีที่ 3 ที่มีความสนใจในด้าน [วิทยาศาสตรื] ฉันชอบเรียนรู้สิ่งใหม่ๆ และพัฒนาตัวเองอยู่เสมอ</p>
+            <div class="info-content">
+                <div class="info-card">
+                    <h3>ข้อมูลพื้นฐาน</h3>
+                    <ul class="info-list">
+                        <li><strong>ชื่อ-นามสกุล:</strong> เด็กหญิงพิมลรัตน์ อินต๊ะวงค์</li>
+                        <li><strong>ชื่อเล่น:</strong> สตางค์ </li>
+                        <li><strong>อายุ:</strong> 14 ปี</li>
+                        <li><strong>วันเกิด:</strong> 19 พฤษภาคม 2555</li>
+                        <li><strong>จังหวัด:</strong> เชียงใหม่</li>
+                    </ul>
                 </div>
-                
-                <div class="info-grid">
-                    <div class="card mini-card">
-                        <span class="icon">🎂</span>
-                        <h4>วันเกิด</h4>
-                        <p>[19พฤษภาคม2555]</p>
-                    </div>
-                    <div class="card mini-card">
-                        <span class="icon">⏳</span>
-                        <h4>อายุ</h4>
-                        <p>[14] ปี</p>
-                    </div>
-                    <div class="card mini-card">
-                        <span class="icon">📍</span>
-                        <h4>จังหวัด</h4>
-                        <p>[เชียงใหม่]</p>
-                    </div>
-                    <div class="card mini-card">
-                        <span class="icon">🏫</span>
-                        <h4>โรงเรียน</h4>
-                        <p>[โรงเรียนจอมทอง]</p>
-                    </div>
+                <div class="info-card mt-20">
+                    <h3>เกี่ยวกับฉัน</h3>
+                    <p>
+                        ฉันเป็นคนชอบเรียนรู้สิ่งใหม่ๆ โดยเฉพาะเรื่องที่เกี่ยวกับวิทยาศาสตร์ 
+                        เป้าหมายของฉันคือการได้ศึกษาต่อในสายวิทย์สุขภาพ
+                    </p>
                 </div>
             </div>
         </div>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 <strong>[พิมลรัตน์ อินต๊ะวงค์]</strong> | ชั้นมัธยมศึกษาปีที่ 3/[กรอกห้อง]</p>
-            <div class="footer-links">
-                <a href="index.html">หน้าแรก</a> | <a href="contact.html">ติดต่อฉัน</a>
-            </div>
-        </div>
+        <p>&copy; 2026 My Portfolio | ออกแบบโดย พิมลรัตน์ อินต๊ะวงค์ 3/2</p>
     </footer>
 </body>
 </html>
