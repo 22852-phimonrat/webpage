@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>หน้าแรก | Portfolio สตางค์</title>
+    <title>Stang | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- นำเข้า Font 'Prompt' -->
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- นำเข้า Icon -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome สำหรับ Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
+    <div id="snow-container"></div>
+
     <header>
         <nav class="navbar">
-            <div class="logo">Stang<span>.Port</span></div>
+            <div class="logo">Stang<span>.</span></div>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">หน้าแรก</a></li>
                 <li><a href="profile.html">ประวัติส่วนตัว</a></li>
@@ -25,45 +26,53 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <section class="hero-section">
-            <div class="hero-container">
-                <div class="hero-text fade-in">
-                    <h2 class="greeting">สวัสดี! ฉันชื่อ</h2>
-                    <h1 class="name">พิลรัตน์ อินต๊ะวงค์</h1>
-                    <p class="tagline">"นักเรียนชั้น ม.3 ที่มีความสนใจและหลงใหลในวิชาวิทยาศาสตร์ พร้อมเรียนรู้สิ่งใหม่ๆ เสมอ"</p>
-                    <div class="hero-buttons">
-                        <a href="profile.html" class="btn btn-primary">รู้จักฉันมากขึ้น</a>
-                        <a href="hobby.html" class="btn btn-outline">ดูงานอดิเรกของฉัน</a>
-                    </div>
+    <main class="container">
+        <section class="hero">
+            <div class="hero-text">
+                <p class="greeting">สวัสดีค่ะ, ยินดีต้อนรับสู่โลกของฉัน ❄️</p>
+                <h1>ฉันชื่อ <span>พิมลรัตน์ อินต๊ะวงค์</span></h1>
+                <h2>นักเรียนชั้นมัธยมศึกษาปีที่ 3 ที่หลงใหลในวิทยาศาสตร์</h2>
+                <p class="description">นี่คือเว็บไซต์ Portfolio ที่รวบรวมประวัติ ผลงาน และสิ่งที่ฉันสนใจ สร้างสรรค์ขึ้นด้วยความตั้งใจเพื่อนำเสนอความเป็นตัวฉันในมุมมองที่ทันสมัยและเป็นเอกลักษณ์</p>
+                <div class="hero-buttons">
+                    <a href="profile.html" class="btn btn-primary"><i class="fas fa-user"></i> รู้จักฉันมากขึ้น</a>
+                    <a href="hobby.html" class="btn btn-outline"><i class="fas fa-heart"></i> ดูงานอดิเรกของฉัน</a>
                 </div>
-                <div class="hero-image-box slide-up">
-                    <div class="image-wrapper">
-                        <!-- เปลี่ยน URL รูปภาพด้านล่างเป็นรูปของน้องได้เลย -->
-                        <img src="https://placehold.co/400x400/1976D2/FFFFFF?text=Stang+Profile" alt="รูปโปรไฟล์ของสตางค์">
-                        <div class="circle-decoration"></div>
-                    </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="https://placehold.co/400x400/E3F2FD/1976D2?text=Stang+Profile" alt="รูปโปรไฟล์ของสตางค์">
+                    <div class="circle-decoration"></div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 พิลรัตน์ อินต๊ะวงค์ (สตางค์) ม.3/2 | จอมทอง</p>
+        <p>&copy; 2026 พิมลรัตน์ อินต๊ะวงค์ (สตางค์) ม.3/2 | โครงงานวิชาคอมพิวเตอร์ โรงเรียนจอมทอง</p>
     </footer>
 
-    <!-- Script สำหรับเกล็ดหิมะเวลาลากเมาส์ -->
+    <!-- Script สำหรับเอฟเฟกต์หิมะและเมาส์ -->
     <script>
         document.addEventListener('mousemove', function(e) {
-            const snow = document.createElement('div');
-            snow.className = 'mouse-snow';
-            snow.style.left = e.pageX + 'px';
-            snow.style.top = e.pageY + 'px';
-            document.body.appendChild(snow);
-            setTimeout(() => { snow.remove(); }, 800);
+            let flake = document.createElement('div');
+            flake.className = 'mouse-snow';
+            flake.style.left = e.pageX + 'px';
+            flake.style.top = e.pageY + 'px';
+            document.body.appendChild(flake);
+            setTimeout(() => flake.remove(), 1000);
         });
+
+        setInterval(() => {
+            let container = document.getElementById('snow-container');
+            let snow = document.createElement('div');
+            snow.className = 'falling-snow';
+            snow.style.left = Math.random() * 100 + 'vw';
+            snow.style.animationDuration = Math.random() * 3 + 2 + 's';
+            snow.style.opacity = Math.random();
+            snow.style.width = snow.style.height = (Math.random() * 10 + 5) + 'px';
+            container.appendChild(snow);
+            setTimeout(() => snow.remove(), 5000);
+        }, 200);
     </script>
 </body>
 </html>
