@@ -3,66 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>งานอดิเรก | Student Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>งานอดิเรก | Stang</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header class="navbar">
-        <div class="nav-container">
-            <div class="logo">My<span>Port.</span></div>
-            <nav>
-                <a href="index.html">หน้าแรก</a>
-                <a href="profile.html">ประวัติส่วนตัว</a>
-                <a href="education.html">การศึกษา</a>
-                <a href="hobby.html" class="active">งานอดิเรก</a>
-                <a href="contact.html">ติดต่อ</a>
-            </nav>
-        </div>
+    <div id="snow-container"></div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Stang<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="profile.html">ประวัติส่วนตัว</a></li>
+                <li><a href="education.html">การศึกษา</a></li>
+                <li><a href="hobby.html" class="active">งานอดิเรก</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="page-container fade-in">
-        <div class="section-header">
-            <h2>งานอดิเรกและความสนใจ</h2>
-            <div class="underline"></div>
-        </div>
+    <main class="container">
+        <section class="section-header">
+            <h2>งานอดิเรกและความสนใจ <i class="fas fa-star"></i></h2>
+            <p>กิจกรรมที่ฉันชอบทำในเวลาว่างเพื่อความผ่อนคลายและพัฒนาตนเอง</p>
+        </section>
 
         <div class="hobby-grid">
-            <div class="hobby-card">
-                <div class="hobby-icon">🎮</div>
-                <h3>เกม</h3>
-                <p>ชอบเล่นเกม free fire</p>
+            <div class="hobby-card fade-in">
+                <div class="hobby-icon"><i class="fas fa-music"></i></div>
+                <h3>ฟังเพลง</h3>
+                <p>การฟังเพลงเป็นงานอดิเรกหลักของฉัน ช่วยให้รู้สึกผ่อนคลายและมีสมาธิในการเรียนมากขึ้น ฉันชอบฟังเพลงหลากหลายแนว</p>
             </div>
-            <div class="hobby-card">
-                <div class="hobby-icon">⚽</div>
-                <h3>กีฬา</h3>
-                <p>ชอบเล่นบาสเก็ทบอล</p>
+            
+            <div class="hobby-card fade-in" style="animation-delay: 0.1s;">
+                <div class="hobby-icon"><i class="fas fa-flask"></i></div>
+                <h3>ทดลองวิทยาศาสตร์</h3>
+                <p>ด้วยความชอบในวิชาวิทยาศาสตร์ ฉันจึงชอบดูสารคดีและค้นคว้าเกี่ยวกับการทดลองใหม่ๆ ที่อธิบายปรากฏการณ์ธรรมชาติได้</p>
             </div>
-            <div class="hobby-card">
-                <div class="hobby-icon">🎵</div>
-                <h3>เพลง</h3>
-                <p>ชอบฟังเพลงแนวสตริง ตอนที่อ่านหนังสือหรือทำการบ้าน</p>
+
+            <div class="hobby-card fade-in" style="animation-delay: 0.2s;">
+                <div class="hobby-icon"><i class="fas fa-book-reader"></i></div>
+                <h3>อ่านหนังสือ</h3>
+                <p>ฉันชอบอ่านหนังสือทั้งนิยายและการ์ตูน เพื่อเปิดโลกจินตนาการและเรียนรู้คำศัพท์ใหม่ๆ ไปในตัว</p>
             </div>
-            <div class="hobby-card">
-                <div class="hobby-icon">🎬</div>
-                <h3>ภาพยนตร์</h3>
-                <p>ชื่นชอบหนังโรแมนติก</p>
-            </div>
-            <div class="hobby-card">
-                <div class="hobby-icon">💻</div>
-                <h3>เทคโนโลยี</h3>
-                <p>ติดตามข่าวสารเกี่ยวกับสมาร์ทโฟนและเทคโนโลยี AI ใหม่ๆ เสมอ</p>
-            </div>
-            <div class="hobby-card">
-                <div class="hobby-icon">📷</div>
+
+            <div class="hobby-card fade-in" style="animation-delay: 0.3s;">
+                <div class="hobby-icon"><i class="fas fa-camera"></i></div>
                 <h3>ถ่ายภาพ</h3>
-                <p>ชอบใช้กล้องมือถือถ่ายภาพวิวธรรมชาติและท้องฟ้าในวันหยุด</p>
+                <p>ชอบบันทึกความทรงจำและมุมมองสวยๆ ของธรรมชาติ ท้องฟ้า และสิ่งรอบตัวผ่านกล้องมือถือ</p>
+            </div>
+
+            <div class="hobby-card fade-in" style="animation-delay: 0.4s;">
+                <div class="hobby-icon"><i class="fas fa-laptop-code"></i></div>
+                <h3>เทคโนโลยี</h3>
+                <p>สนใจการออกแบบเว็บไซต์และการใช้คอมพิวเตอร์ ซึ่งเป็นที่มาของการสร้าง Portfolio เว็บไซต์นี้ด้วยความตั้งใจ</p>
+            </div>
+
+            <div class="hobby-card fade-in" style="animation-delay: 0.5s;">
+                <div class="hobby-icon"><i class="fas fa-film"></i></div>
+                <h3>ดูภาพยนตร์</h3>
+                <p>ชอบดูภาพยนตร์แนว Sci-Fi และแฟนตาซี เพราะช่วยสร้างแรงบันดาลใจและให้มุมมองที่แตกต่างออกไป</p>
             </div>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 My Portfolio | ออกแบบโดย พิมลรัตนฺ์ อินต๊ะวงค์ 3/2</p>
+        <p>&copy; 2026 พิมลรัตน์ อินต๊ะวงค์ (สตางค์) ม.3/2 | โครงงานวิชาคอมพิวเตอร์ โรงเรียนจอมทอง</p>
     </footer>
+
+    <script>
+        document.addEventListener('mousemove', function(e) {
+            let flake = document.createElement('div');
+            flake.className = 'mouse-snow';
+            flake.style.left = e.pageX + 'px';
+            flake.style.top = e.pageY + 'px';
+            document.body.appendChild(flake);
+            setTimeout(() => flake.remove(), 1000);
+        });
+        setInterval(() => {
+            let container = document.getElementById('snow-container');
+            let snow = document.createElement('div');
+            snow.className = 'falling-snow';
+            snow.style.left = Math.random() * 100 + 'vw';
+            snow.style.animationDuration = Math.random() * 3 + 2 + 's';
+            snow.style.opacity = Math.random();
+            snow.style.width = snow.style.height = (Math.random() * 10 + 5) + 'px';
+            container.appendChild(snow);
+            setTimeout(() => snow.remove(), 5000);
+        }, 200);
+    </script>
 </body>
 </html>
