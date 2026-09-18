@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ประวัติส่วนตัว | Portfolio สตางค์</title>
+    <title>ประวัติส่วนตัว | Stang</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <div id="snow-container"></div>
+
     <header>
         <nav class="navbar">
-            <div class="logo">Stang<span>.Port</span></div>
+            <div class="logo">Stang<span>.</span></div>
             <ul class="nav-links">
                 <li><a href="index.html">หน้าแรก</a></li>
                 <li><a href="profile.html" class="active">ประวัติส่วนตัว</a></li>
@@ -22,45 +24,57 @@
         </nav>
     </header>
 
-    <main class="page-container">
-        <section class="section-header fade-in">
-            <h2>ประวัติส่วนตัว <span>(Profile)</span></h2>
-            <div class="divider"></div>
+    <main class="container">
+        <section class="section-header">
+            <h2>ประวัติส่วนตัว <i class="fas fa-id-card"></i></h2>
+            <p>ข้อมูลเบื้องต้นและเรื่องราวเกี่ยวกับฉัน</p>
         </section>
 
-        <section class="profile-content slide-up">
-            <div class="profile-card">
-                <div class="profile-img-side">
-                    <img src="https://placehold.co/300x400/42A5F5/FFFFFF?text=My+Photo" alt="รูปของฉัน">
+        <section class="profile-layout">
+            <div class="profile-card fade-in">
+                <img src="https://placehold.co/300x300/E3F2FD/1976D2?text=Stang" alt="รูปโปรไฟล์ของสตางค์">
+                <h3>พิมลรัตน์ อินต๊ะวงค์</h3>
+                <p class="nickname">ชื่อเล่น: สตางค์</p>
+                <div class="social-mini">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
-                <div class="profile-info-side">
-                    <h3>ข้อมูลส่วนตัว</h3>
-                    <div class="info-grid">
-                        <div class="info-item">
-                            <span class="info-label"><i class="fa-solid fa-user"></i> ชื่อ-นามสกุล:</span>
-                            <span class="info-value">พิลรัตน์ อินต๊ะวงค์</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label"><i class="fa-regular fa-face-smile"></i> ชื่อเล่น:</span>
-                            <span class="info-value">สตางค์</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label"><i class="fa-solid fa-cake-candles"></i> วันเกิด:</span>
-                            <span class="info-value">19 พฤษภาคม 2555</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label"><i class="fa-solid fa-hashtag"></i> อายุ:</span>
-                            <span class="info-value">14 ปี</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label"><i class="fa-solid fa-location-dot"></i> จังหวัด:</span>
-                            <span class="info-value">เชียงใหม่</span>
+            </div>
+
+            <div class="info-content fade-in">
+                <div class="info-box">
+                    <h3>เกี่ยวกับฉัน</h3>
+                    <p>สวัสดีค่ะ ฉันชื่อสตางค์ ปัจจุบันกำลังศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 3 ที่โรงเรียนจอมทอง ฉันเป็นคนชอบเรียนรู้สิ่งใหม่ๆ โดยเฉพาะเรื่องราวที่เกี่ยวกับวิทยาศาสตร์และธรรมชาติรอบตัว ในเวลาว่างฉันชอบฟังเพลงเพื่อผ่อนคลายและค้นหาแรงบันดาลใจใหม่ๆ</p>
+                </div>
+                
+                <div class="info-grid">
+                    <div class="info-item">
+                        <i class="fas fa-birthday-cake"></i>
+                        <div>
+                            <h4>วันเกิด</h4>
+                            <p>19 พฤษภาคม 2555</p>
                         </div>
                     </div>
-                    
-                    <div class="about-me-box">
-                        <h4>เกี่ยวกับฉัน</h4>
-                        <p>สวัสดีค่ะ ฉันชื่อสตางค์ เป็นคนร่าเริงและชอบค้นหาสิ่งใหม่ๆ โดยเฉพาะเรื่องราวที่เกี่ยวกับวิทยาศาสตร์และการทดลอง ฉันเชื่อว่าทุกสิ่งรอบตัวเราสามารถอธิบายได้ด้วยหลักการทางวิทยาศาสตร์ ในอนาคตฉันมีความฝันที่จะนำความรู้ไปใช้พัฒนาสิ่งที่เป็นประโยชน์ต่อสังคม</p>
+                    <div class="info-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div>
+                            <h4>อายุ</h4>
+                            <p>14 ปี</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>จังหวัด</h4>
+                            <p>เชียงใหม่</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-heart"></i>
+                        <div>
+                            <h4>ความสนใจ</h4>
+                            <p>ด้านวิทยาศาสตร์</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -68,18 +82,29 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 พิลรัตน์ อินต๊ะวงค์ (สตางค์) ม.3/2 | จอมทอง</p>
+        <p>&copy; 2026 พิมลรัตน์ อินต๊ะวงค์ (สตางค์) ม.3/2 | โครงงานวิชาคอมพิวเตอร์ โรงเรียนจอมทอง</p>
     </footer>
 
     <script>
         document.addEventListener('mousemove', function(e) {
-            const snow = document.createElement('div');
-            snow.className = 'mouse-snow';
-            snow.style.left = e.pageX + 'px';
-            snow.style.top = e.pageY + 'px';
-            document.body.appendChild(snow);
-            setTimeout(() => { snow.remove(); }, 800);
+            let flake = document.createElement('div');
+            flake.className = 'mouse-snow';
+            flake.style.left = e.pageX + 'px';
+            flake.style.top = e.pageY + 'px';
+            document.body.appendChild(flake);
+            setTimeout(() => flake.remove(), 1000);
         });
+        setInterval(() => {
+            let container = document.getElementById('snow-container');
+            let snow = document.createElement('div');
+            snow.className = 'falling-snow';
+            snow.style.left = Math.random() * 100 + 'vw';
+            snow.style.animationDuration = Math.random() * 3 + 2 + 's';
+            snow.style.opacity = Math.random();
+            snow.style.width = snow.style.height = (Math.random() * 10 + 5) + 'px';
+            container.appendChild(snow);
+            setTimeout(() => snow.remove(), 5000);
+        }, 200);
     </script>
 </body>
 </html>
