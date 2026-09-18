@@ -3,60 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ประวัติส่วนตัว | Student Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>ประวัติส่วนตัว | Portfolio สตางค์</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header class="navbar">
-        <div class="nav-container">
-            <div class="logo">My<span>Port.</span></div>
-            <nav>
-                <a href="index.html">หน้าแรก</a>
-                <a href="profile.html" class="active">ประวัติส่วนตัว</a>
-                <a href="education.html">การศึกษา</a>
-                <a href="hobby.html">งานอดิเรก</a>
-                <a href="contact.html">ติดต่อ</a>
-            </nav>
-        </div>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Stang<span>.Port</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="profile.html" class="active">ประวัติส่วนตัว</a></li>
+                <li><a href="education.html">การศึกษา</a></li>
+                <li><a href="hobby.html">งานอดิเรก</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="page-container fade-in">
-        <div class="section-header">
-            <h2>ประวัติส่วนตัว</h2>
-            <div class="underline"></div>
-        </div>
+    <main class="page-container">
+        <section class="section-header fade-in">
+            <h2>ประวัติส่วนตัว <span>(Profile)</span></h2>
+            <div class="divider"></div>
+        </section>
 
-        <div class="profile-grid">
+        <section class="profile-content slide-up">
             <div class="profile-card">
-                <img src="https://placehold.co/300x300/42A5F5/FFFFFF?text=Profile" alt="รูปโปรไฟล์ของฉัน">
-                <h3>พิมลัตน์ อินต๊ะวงค์ (สตางค์)</h3>
-                <p class="tag">นักเรียนมัธยมศึกษาตอนต้น</p>
-            </div>
-            <div class="info-content">
-                <div class="info-card">
-                    <h3>ข้อมูลพื้นฐาน</h3>
-                    <ul class="info-list">
-                        <li><strong>ชื่อ-นามสกุล:</strong> เด็กหญิงพิมลัตน์ อินต๊ะวงค์ </li>
-                        <li><strong>ชื่อเล่น:</strong> สตางค์</li>
-                        <li><strong>อายุ:</strong> 14 ปี</li>
-                        <li><strong>วันเกิด:</strong> 19 พฤษภาคม2555</li>
-                        <li><strong>จังหวัด:</strong> เชียงใหม่</li>
-                    </ul>
+                <div class="profile-img-side">
+                    <img src="https://placehold.co/300x400/42A5F5/FFFFFF?text=My+Photo" alt="รูปของฉัน">
                 </div>
-                <div class="info-card mt-20">
-                    <h3>เกี่ยวกับฉัน</h3>
-                    <p>
-                        ฉันเป็นคนชอบเรียนรู้สิ่งใหม่ๆ โดยเฉพาะเรื่องที่เกี่ยวกับวิทยาศาสตร์ 
-                        เป้าหมายของผมคือการได้ศึกษาต่อในสายวิทย์สุขภาพ 
-                    </p>
+                <div class="profile-info-side">
+                    <h3>ข้อมูลส่วนตัว</h3>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="info-label"><i class="fa-solid fa-user"></i> ชื่อ-นามสกุล:</span>
+                            <span class="info-value">พิลรัตน์ อินต๊ะวงค์</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="fa-regular fa-face-smile"></i> ชื่อเล่น:</span>
+                            <span class="info-value">สตางค์</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="fa-solid fa-cake-candles"></i> วันเกิด:</span>
+                            <span class="info-value">19 พฤษภาคม 2555</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="fa-solid fa-hashtag"></i> อายุ:</span>
+                            <span class="info-value">14 ปี</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="fa-solid fa-location-dot"></i> จังหวัด:</span>
+                            <span class="info-value">เชียงใหม่</span>
+                        </div>
+                    </div>
+                    
+                    <div class="about-me-box">
+                        <h4>เกี่ยวกับฉัน</h4>
+                        <p>สวัสดีค่ะ ฉันชื่อสตางค์ เป็นคนร่าเริงและชอบค้นหาสิ่งใหม่ๆ โดยเฉพาะเรื่องราวที่เกี่ยวกับวิทยาศาสตร์และการทดลอง ฉันเชื่อว่าทุกสิ่งรอบตัวเราสามารถอธิบายได้ด้วยหลักการทางวิทยาศาสตร์ ในอนาคตฉันมีความฝันที่จะนำความรู้ไปใช้พัฒนาสิ่งที่เป็นประโยชน์ต่อสังคม</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 My Portfolio | ออกแบบโดย พิมลัตน์ อินต๊ะวงค์ 3/2</p>
+        <p>&copy; 2024 พิลรัตน์ อินต๊ะวงค์ (สตางค์) ม.3/2 | จอมทอง</p>
     </footer>
+
+    <script>
+        document.addEventListener('mousemove', function(e) {
+            const snow = document.createElement('div');
+            snow.className = 'mouse-snow';
+            snow.style.left = e.pageX + 'px';
+            snow.style.top = e.pageY + 'px';
+            document.body.appendChild(snow);
+            setTimeout(() => { snow.remove(); }, 800);
+        });
+    </script>
 </body>
 </html>
