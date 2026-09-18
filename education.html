@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>การศึกษา | Portfolio สตางค์</title>
+    <title>การศึกษา | Stang</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <div id="snow-container"></div>
+
     <header>
         <nav class="navbar">
-            <div class="logo">Stang<span>.Port</span></div>
+            <div class="logo">Stang<span>.</span></div>
             <ul class="nav-links">
                 <li><a href="index.html">หน้าแรก</a></li>
                 <li><a href="profile.html">ประวัติส่วนตัว</a></li>
@@ -22,89 +24,90 @@
         </nav>
     </header>
 
-    <main class="page-container">
-        <section class="section-header fade-in">
-            <h2>ประวัติการศึกษา <span>(Education)</span></h2>
-            <div class="divider"></div>
+    <main class="container">
+        <section class="section-header">
+            <h2>ประวัติการศึกษา <i class="fas fa-graduation-cap"></i></h2>
+            <p>เส้นทางการเรียนรู้และการศึกษาของฉัน</p>
         </section>
 
-        <!-- Highlight Box -->
-        <section class="edu-highlight slide-up">
-            <div class="highlight-card">
-                <i class="fa-solid fa-school highlight-icon"></i>
-                <h3>ปัจจุบันกำลังศึกษาที่</h3>
-                <h2>โรงเรียนจอมทอง</h2>
-                <p>ระดับชั้นมัธยมศึกษาปีที่ 3 ห้อง 2</p>
-                <div class="fav-subject">
-                    วิชาที่ชอบ: <strong>วิทยาศาสตร์</strong> <i class="fa-solid fa-flask"></i>
-                </div>
-            </div>
-        </section>
-
-        <!-- Timeline -->
-        <section class="timeline-section slide-up">
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>ระดับประถมศึกษา</h3>
-                        <p class="timeline-school">โรงเรียน (ใโรงเรียนศรีจอมทอง)</p>
-                        <p class="timeline-desc">เรียนรู้พื้นฐานและเข้าร่วมกิจกรรมวิชาการของโรงเรียน</p>
+        <div class="education-layout">
+            <section class="timeline-section fade-in">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>ประถมศึกษา</h3>
+                            <p class="date">พ.ศ. 2561 - 2566</p>
+                            <p>สำเร็จการศึกษาระดับประถมศึกษา เข้าร่วมกิจกรรมวิชาการและเป็นตัวแทนห้องเรียนในการตอบปัญหาวิทยาศาสตร์</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>มัธยมศึกษาตอนต้น (ปัจจุบัน)</h3>
+                            <p class="date">พ.ศ. 2567 - ปัจจุบัน</p>
+                            <p>กำลังศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 3 ที่โรงเรียนจอมทอง มีความสนใจและตั้งใจในการเรียนวิชาวิทยาศาสตร์เป็นพิเศษ</p>
+                        </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>ระดับมัธยมศึกษาตอนต้น</h3>
-                        <p class="timeline-school">โรงเรียนจอมทอง</p>
-                        <p class="timeline-desc">ค้นพบความสนใจในวิชาวิทยาศาสตร์ และเข้าร่วมโครงงานคอมพิวเตอร์</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Education Table -->
-        <section class="table-section slide-up">
-            <table class="styled-table">
-                <thead>
-                    <tr>
-                        <th>ระดับชั้น</th>
-                        <th>สถานศึกษา</th>
-                        <th>สายการเรียน/แผนก</th>
-                        <th>ปีการศึกษา (พ.ศ.)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>ประถมศึกษา (ป.1 - ป.6)</td>
-                        <td>(โรงเรียนศรีจอมทอง)</td>
-                        <td>สามัญ</td>
-                        <td>2561 - 2566</td>
-                    </tr>
-                    <tr>
-                        <td>มัธยมศึกษา (ม.1 - ม.3)</td>
-                        <td>โรงเรียนจอมทอง</td>
-                        <td>สามัญ</td>
-                        <td>2567 - ปัจจุบัน</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+            <section class="table-section fade-in">
+                <h3>ข้อมูลการศึกษาปัจจุบัน</h3>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>หัวข้อ</th>
+                            <th>รายละเอียด</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="fas fa-school"></i> โรงเรียน</td>
+                            <td>โรงเรียนจอมทอง</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-level-up-alt"></i> ระดับชั้น</td>
+                            <td>มัธยมศึกษาปีที่ 3</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-chalkboard-teacher"></i> ห้องเรียน</td>
+                            <td>ม.3/2</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-flask"></i> วิชาที่ชอบ</td>
+                            <td>วิทยาศาสตร์</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2024 พิลรัตน์ อินต๊ะวงค์ (สตางค์) ม.3/2 | จอมทอง</p>
+        <p>&copy; 2026 พิมลรัตน์ อินต๊ะวงค์ (สตางค์) ม.3/2 | โครงงานวิชาคอมพิวเตอร์ โรงเรียนจอมทอง</p>
     </footer>
 
     <script>
         document.addEventListener('mousemove', function(e) {
-            const snow = document.createElement('div');
-            snow.className = 'mouse-snow';
-            snow.style.left = e.pageX + 'px';
-            snow.style.top = e.pageY + 'px';
-            document.body.appendChild(snow);
-            setTimeout(() => { snow.remove(); }, 800);
+            let flake = document.createElement('div');
+            flake.className = 'mouse-snow';
+            flake.style.left = e.pageX + 'px';
+            flake.style.top = e.pageY + 'px';
+            document.body.appendChild(flake);
+            setTimeout(() => flake.remove(), 1000);
         });
+        setInterval(() => {
+            let container = document.getElementById('snow-container');
+            let snow = document.createElement('div');
+            snow.className = 'falling-snow';
+            snow.style.left = Math.random() * 100 + 'vw';
+            snow.style.animationDuration = Math.random() * 3 + 2 + 's';
+            snow.style.opacity = Math.random();
+            snow.style.width = snow.style.height = (Math.random() * 10 + 5) + 'px';
+            container.appendChild(snow);
+            setTimeout(() => snow.remove(), 5000);
+        }, 200);
     </script>
 </body>
 </html>
