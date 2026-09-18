@@ -3,56 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ติดต่อ | Student Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>ติดต่อฉัน | Stang</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header class="navbar">
-        <div class="nav-container">
-            <div class="logo">My<span>Port.</span></div>
-            <nav>
-                <a href="index.html">หน้าแรก</a>
-                <a href="profile.html">ประวัติส่วนตัว</a>
-                <a href="education.html">การศึกษา</a>
-                <a href="hobby.html">งานอดิเรก</a>
-                <a href="contact.html" class="active">ติดต่อ</a>
-            </nav>
-        </div>
+    <div id="snow-container"></div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Stang<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="profile.html">ประวัติส่วนตัว</a></li>
+                <li><a href="education.html">การศึกษา</a></li>
+                <li><a href="hobby.html">งานอดิเรก</a></li>
+                <li><a href="contact.html" class="active">ติดต่อ</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="page-container fade-in">
-        <div class="section-header">
-            <h2>ช่องทางการติดต่อ</h2>
-            <div class="underline"></div>
-            <p class="contact-subtitle">สามารถติดต่อพูดคุย แลกเปลี่ยนความรู้ หรือให้คำแนะนำผมได้ตามช่องทางด้านล่างนี้ครับ</p>
-        </div>
+    <main class="container">
+        <section class="section-header">
+            <h2>ช่องทางการติดต่อ <i class="fas fa-paper-plane"></i></h2>
+            <p>ยินดีที่ได้รู้จัก! คุณสามารถติดต่อฉันได้ผ่านช่องทางด้านล่างนี้</p>
+        </section>
 
         <div class="contact-grid">
-            <div class="contact-card">
-                <div class="contact-icon">📧</div>
+            <div class="contact-card fade-in">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                 <h3>Email</h3>
-                <p>nophadol.j@example.com</p>
-                <a href="mailto:nophadol.j@example.com" class="btn btn-outline">ส่งอีเมล</a>
+                <p>stang.pimolrat@example.com</p>
+                <a href="mailto:stang.pimolrat@example.com" class="btn btn-outline btn-sm">ส่งอีเมล</a>
             </div>
-            <div class="contact-card">
-                <div class="contact-icon">🌐</div>
-                <h3>Social Media</h3>
-                <p>Facebook: Nophadol Jaidee</p>
-                <a href="#" class="btn btn-outline">ไปที่ Facebook</a>
+
+            <div class="contact-card fade-in" style="animation-delay: 0.1s;">
+                <div class="contact-icon"><i class="fab fa-facebook-f"></i></div>
+                <h3>Facebook</h3>
+                <p>Pimolrat Intawong</p>
+                <a href="#" class="btn btn-outline btn-sm">ไปที่โปรไฟล์</a>
             </div>
-            <div class="contact-card">
-                <div class="contact-icon">🏫</div>
-                <h3>โรงเรียน</h3>
-                <p>ห้อง ม.3/2 โรงเรียนจอมทอง</p>
-                <a href="#" class="btn btn-outline">ดูแผนที่</a>
+
+            <div class="contact-card fade-in" style="animation-delay: 0.2s;">
+                <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <h3>Location</h3>
+                <p>โรงเรียนจอมทอง<br>จังหวัดเชียงใหม่</p>
             </div>
+        </div>
+
+        <div class="contact-cta fade-in" style="animation-delay: 0.3s;">
+            <h3>"Thank you for visiting my portfolio!"</h3>
+            <p>หวังว่าเว็บไซต์นี้จะทำให้รู้จักฉันมากขึ้นนะคะ ❄️</p>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 My Portfolio | ออกแบบโดย พิมลรัตน์ อินต๊ะวงค์ ม.3/2</p>
+        <p>&copy; 2026 พิมลรัตน์ อินต๊ะวงค์ (สตางค์) ม.3/2 | โครงงานวิชาคอมพิวเตอร์ โรงเรียนจอมทอง</p>
     </footer>
+
+    <script>
+        document.addEventListener('mousemove', function(e) {
+            let flake = document.createElement('div');
+            flake.className = 'mouse-snow';
+            flake.style.left = e.pageX + 'px';
+            flake.style.top = e.pageY + 'px';
+            document.body.appendChild(flake);
+            setTimeout(() => flake.remove(), 1000);
+        });
+        setInterval(() => {
+            let container = document.getElementById('snow-container');
+            let snow = document.createElement('div');
+            snow.className = 'falling-snow';
+            snow.style.left = Math.random() * 100 + 'vw';
+            snow.style.animationDuration = Math.random() * 3 + 2 + 's';
+            snow.style.opacity = Math.random();
+            snow.style.width = snow.style.height = (Math.random() * 10 + 5) + 'px';
+            container.appendChild(snow);
+            setTimeout(() => snow.remove(), 5000);
+        }, 200);
+    </script>
 </body>
-</html></body>
 </html>
