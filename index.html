@@ -3,48 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>หน้าแรก | Student Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>หน้าแรก | Portfolio สตางค์</title>
     <link rel="stylesheet" href="style.css">
+    <!-- นำเข้า Font 'Prompt' -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- นำเข้า Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header class="navbar">
-        <div class="nav-container">
-            <div class="logo">My<span>Port.</span></div>
-            <nav>
-                <a href="index.html" class="active">หน้าแรก</a>
-                <a href="profile.html">ประวัติส่วนตัว</a>
-                <a href="education.html">การศึกษา</a>
-                <a href="hobby.html">งานอดิเรก</a>
-                <a href="contact.html">ติดต่อ</a>
-            </nav>
-        </div>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Stang<span>.Port</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">หน้าแรก</a></li>
+                <li><a href="profile.html">ประวัติส่วนตัว</a></li>
+                <li><a href="education.html">การศึกษา</a></li>
+                <li><a href="hobby.html">งานอดิเรก</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="hero-section fade-in">
-        <div class="hero-container">
-            <div class="hero-content">
-                <p class="subtitle">สวัสดีค่่ะ! ยินดีต้อนรับสู่พื้นที่ของฉัน👋</p>
-                <h1>ฉันชื่อ <span>พิมลรัตน์ อินต๊ะวงค์</span></h1>
-                <p class="description">
-                    นักเรียนชั้นมัธยมศึกษาปีที่ 3 ที่มีความหลงใหลในวิชาวิทยาศาสตร์
-                </p>
-                <div class="hero-buttons">
-                    <a href="profile.html" class="btn btn-primary">รู้จักฉันมากขึ้น</a>
-                    <a href="hobby.html" class="btn btn-secondary">ดูงานอดิเรกของฉัน</a>
+    <!-- Main Content -->
+    <main>
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-text fade-in">
+                    <h2 class="greeting">สวัสดี! ฉันชื่อ</h2>
+                    <h1 class="name">พิลรัตน์ อินต๊ะวงค์</h1>
+                    <p class="tagline">"นักเรียนชั้น ม.3 ที่มีความสนใจและหลงใหลในวิชาวิทยาศาสตร์ พร้อมเรียนรู้สิ่งใหม่ๆ เสมอ"</p>
+                    <div class="hero-buttons">
+                        <a href="profile.html" class="btn btn-primary">รู้จักฉันมากขึ้น</a>
+                        <a href="hobby.html" class="btn btn-outline">ดูงานอดิเรกของฉัน</a>
+                    </div>
+                </div>
+                <div class="hero-image-box slide-up">
+                    <div class="image-wrapper">
+                        <!-- เปลี่ยน URL รูปภาพด้านล่างเป็นรูปของน้องได้เลย -->
+                        <img src="https://placehold.co/400x400/1976D2/FFFFFF?text=Stang+Profile" alt="รูปโปรไฟล์ของสตางค์">
+                        <div class="circle-decoration"></div>
+                    </div>
                 </div>
             </div>
-            <div class="hero-image floating">
-                <div class="image-wrapper">
-                    <img src="https://placehold.co/400x400/90CAF9/0D47A1?text=My+Profile" alt="รูปโปรไฟล์ของฉัน">
-                    <div class="circle-decoration"></div>
-                </div>
-            </div>
-        </div>
+        </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 My Portfolio | ออกแบบโดย พิมลรัตน์ อินต๊ะวงค์ 3/2 </p>
+        <p>&copy; 2024 พิลรัตน์ อินต๊ะวงค์ (สตางค์) ม.3/2 | จอมทอง</p>
     </footer>
+
+    <!-- Script สำหรับเกล็ดหิมะเวลาลากเมาส์ -->
+    <script>
+        document.addEventListener('mousemove', function(e) {
+            const snow = document.createElement('div');
+            snow.className = 'mouse-snow';
+            snow.style.left = e.pageX + 'px';
+            snow.style.top = e.pageY + 'px';
+            document.body.appendChild(snow);
+            setTimeout(() => { snow.remove(); }, 800);
+        });
+    </script>
 </body>
 </html>
