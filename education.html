@@ -3,71 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>การศึกษา | Student Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>การศึกษา | Portfolio สตางค์</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header class="navbar">
-        <div class="nav-container">
-            <div class="logo">My<span>Port.</span></div>
-            <nav>
-                <a href="index.html">หน้าแรก</a>
-                <a href="profile.html">ประวัติส่วนตัว</a>
-                <a href="education.html" class="active">การศึกษา</a>
-                <a href="hobby.html">งานอดิเรก</a>
-                <a href="contact.html">ติดต่อ</a>
-            </nav>
-        </div>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Stang<span>.Port</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="profile.html">ประวัติส่วนตัว</a></li>
+                <li><a href="education.html" class="active">การศึกษา</a></li>
+                <li><a href="hobby.html">งานอดิเรก</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="page-container fade-in">
-        <div class="section-header">
-            <h2>ประวัติการศึกษา</h2>
-            <div class="underline"></div>
-        </div>
+    <main class="page-container">
+        <section class="section-header fade-in">
+            <h2>ประวัติการศึกษา <span>(Education)</span></h2>
+            <div class="divider"></div>
+        </section>
 
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>ระดับชั้นประถมศึกษา (ป.1 - ป.6)</h3>
-                    <h4>โรงเรียนศรีจอมทอง</h4>
-                    <p></p>
+        <!-- Highlight Box -->
+        <section class="edu-highlight slide-up">
+            <div class="highlight-card">
+                <i class="fa-solid fa-school highlight-icon"></i>
+                <h3>ปัจจุบันกำลังศึกษาที่</h3>
+                <h2>โรงเรียนจอมทอง</h2>
+                <p>ระดับชั้นมัธยมศึกษาปีที่ 3 ห้อง 2</p>
+                <div class="fav-subject">
+                    วิชาที่ชอบ: <strong>วิทยาศาสตร์</strong> <i class="fa-solid fa-flask"></i>
                 </div>
             </div>
-            
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>ระดับชั้นมัธยมศึกษาตอนต้น (ม.1 - ปัจจุบัน)</h3>
-                    <h4>โรงเรียนจอมทอง</h4>
-                    <p>กำลังศึกษาอยู่ชั้น ม.3/2 สายวิทย์-คณิต มีความสนใจเป็นพิเศษในรายวิชาวิทยาการคำนวณ</p>
-                </div>
-            </div>
-        </div>
+        </section>
 
-        <div class="highlight-section">
-            <h3>ข้อมูลไฮไลท์</h3>
-            <div class="highlight-grid">
-                <div class="stat-card">
-                    <h4>ระดับชั้น</h4>
-                    <p>ม.3 ห้อง 2</p>
+        <!-- Timeline -->
+        <section class="timeline-section slide-up">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>ระดับประถมศึกษา</h3>
+                        <p class="timeline-school">โรงเรียน (ใโรงเรียนศรีจอมทอง)</p>
+                        <p class="timeline-desc">เรียนรู้พื้นฐานและเข้าร่วมกิจกรรมวิชาการของโรงเรียน</p>
+                    </div>
                 </div>
-                <div class="stat-card">
-                    <h4>วิชาที่ชอบ</h4>
-                    <p>วิทยาการคำนวณ, คณิตศาสตร์</p>
-                </div>
-                <div class="stat-card">
-                    <h4>เกรดเฉลี่ย</h4>
-                    <p>3.64</p>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>ระดับมัธยมศึกษาตอนต้น</h3>
+                        <p class="timeline-school">โรงเรียนจอมทอง</p>
+                        <p class="timeline-desc">ค้นพบความสนใจในวิชาวิทยาศาสตร์ และเข้าร่วมโครงงานคอมพิวเตอร์</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Education Table -->
+        <section class="table-section slide-up">
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>ระดับชั้น</th>
+                        <th>สถานศึกษา</th>
+                        <th>สายการเรียน/แผนก</th>
+                        <th>ปีการศึกษา (พ.ศ.)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ประถมศึกษา (ป.1 - ป.6)</td>
+                        <td>(โรงเรียนศรีจอมทอง)</td>
+                        <td>สามัญ</td>
+                        <td>2561 - 2566</td>
+                    </tr>
+                    <tr>
+                        <td>มัธยมศึกษา (ม.1 - ม.3)</td>
+                        <td>โรงเรียนจอมทอง</td>
+                        <td>สามัญ</td>
+                        <td>2567 - ปัจจุบัน</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 My Portfolio | ออกแบบโดย พิลรัตน์ อินต๊ะวงค์ ม.3/2</p>
+        <p>&copy; 2024 พิลรัตน์ อินต๊ะวงค์ (สตางค์) ม.3/2 | จอมทอง</p>
     </footer>
+
+    <script>
+        document.addEventListener('mousemove', function(e) {
+            const snow = document.createElement('div');
+            snow.className = 'mouse-snow';
+            snow.style.left = e.pageX + 'px';
+            snow.style.top = e.pageY + 'px';
+            document.body.appendChild(snow);
+            setTimeout(() => { snow.remove(); }, 800);
+        });
+    </script>
 </body>
 </html>
